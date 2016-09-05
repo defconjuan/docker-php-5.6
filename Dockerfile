@@ -10,10 +10,16 @@ ADD ./src /src
 
 RUN /src/entrypoint.sh build
 
+RUN mkdir -p /var/run/sshd
+#RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config
+#  && sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config \
+#  && touch /root/.Xauthority \
+#  && true
+
 EXPOSE 9000 50022
 
-RUN mkdir -p /var/run/sshd
+# RUN /etc/init.d/ssh start #original
+# CMD ["/usr/sbin/sshd", "-D"] # to test
 
-RUN /etc/init.d/ssh start
 
 ENTRYPOINT ["/src/entrypoint.sh", "run"]
