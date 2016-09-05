@@ -9,6 +9,6 @@ sed -i 's/Port 22/\# Defcon edits\: \
 
 puppet apply --modulepath=/src/php-5.6/build/modules /src/php-5.6/build/build.pp
 
-update-rc.d ssh defaults
+# update-rc.d ssh defaults
 
 echo -e "container\ncontainer" | passwd container

@@ -14,6 +14,6 @@ EXPOSE 9000 50022
 
 RUN mkdir -p /var/run/sshd
 
-RUN /etc/init.d/ssh start
+# RUN /etc/init.d/ssh start
 
 ENTRYPOINT ["/src/entrypoint.sh", "run"]
