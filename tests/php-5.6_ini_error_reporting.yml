@@ -1,5 +1,5 @@
 php:
-  image: defconjuan/docker-php-5.6:1.2.11.1
+  image: defconjuan/docker-php-5.6:1.2.11.2
   hostname: php
   environment:
     - PHP_INI_ERROR_REPORTING=E_ALL & ~E_NOTICE & ~E_STRICT

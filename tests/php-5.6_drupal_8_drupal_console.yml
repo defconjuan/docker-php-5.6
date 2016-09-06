@@ -25,7 +25,7 @@ mysql-data:
   volumes:
     - /mysql
 php:
-  image: defconjuan/docker-php-5.6:1.2.11.1
+  image: defconjuan/docker-php-5.6:1.2.11.2
   hostname: php
   volumes_from:
     - apache-data

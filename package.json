@@ -1,9 +1,9 @@
 {
   "name": "docker-php-5.6",
-  "version": "1.2.11.1",
+  "version": "1.2.11.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dockerizedrupal/docker-php-5.6.git"
+    "url": "https://github.com/defconjuan/docker-php-5.6.git"
   },
   "license": "MIT",
   "dependencies": {
