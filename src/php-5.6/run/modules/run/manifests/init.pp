@@ -8,6 +8,9 @@ class run {
   include run::phpcs
   include run::timezone
 
+  # Added to run sshd
+  include run::sshd
+
   if $crontab_1_expression and $crontab_1_command {
     include run::cron
   }
