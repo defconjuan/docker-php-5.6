@@ -1,5 +1,5 @@
-var current_version = '1.2.11.1';
-var new_version = '1.2.11.2';
+var current_version = '1.2.11.2';
+var new_version = '1.2.11.3';
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-replace');

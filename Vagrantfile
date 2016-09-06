@@ -1,6 +1,4 @@
-VERSION = "1.2.11.2"
-
-require 'yaml'
+VERSION = "1.2.11.3"
 
 required_plugins = %w(vagrant-vbguest)
 
